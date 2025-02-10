@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.cl-minor-text {
+    color: #333;
+}
+
+.changelog-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    width: 380px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-family: 'Lora', serif;
+}
+
+.changelog-component header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+header h2 {
+    font-size: 1.6rem;
+}
+
+.cl-h-container {
+    box-shadow: 0 1px 9px 0 rgb(0 0 0 / 50%);
+    margin-bottom: 1rem;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0 2rem;
+}
+
+.changelog-component p, h2 {
+    padding: 1rem .5rem;
+}
+
+.cl-container {
+    padding-bottom: 1rem;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+.cl-line{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+}
+
+.cl-line:first-child  {
+    height: 1.2rem;
+}
+
+.cl-line:last-child  {
+    height: 1.2rem;
+}
+
+.cl-left-col{
+    width: 160px;
+    border-right:1px solid #333;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding: 0 1.2rem;
+}
+
+.cl-right-col{
+    flex-grow:1;
+    border-left:1px solid #333;
+    display:flex;
+    text-align: left;
+    justify-content: start;
+    align-items:center;
+    padding: 0 2rem;
+}
+
+.cl-circle {
+    width: 30px;
+    height:30px;
+    background-color:rgb(12, 3, 32);
+    box-shadow: 0 1px 9px 0 rgb(0 0 0 / 40%);
+    position:absolute;
+    top:30%;
+    left: 145px;
+    border-radius:50%
+}
+
+.cl-link {
+    padding: 1rem;
+    background: rgb(12, 3, 32);
+    border: 1px solid #eee;
+    color: #eee;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .changelog-component {
+        width: 600px;
+    }
+    .cl-line {
+        font-size: 1rem;
+    }
+    .cl-left-col {
+        width: 220px;
+        padding: 0 2rem;
+    }
+    .cl-circle {
+        left: 205px;
+    }
+}
