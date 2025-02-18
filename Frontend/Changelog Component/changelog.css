@@ -119,3 +119,20 @@ footer {
         left: 205px;
     }
 }
+
+@media (max-width: 390px) {
+    .changelog-component {
+        width: 340px;
+    }
+    .cl-line {
+        font-size: .8rem;
+    }
+    .cl-left-col {
+        width: 180px;
+        padding: 0 1rem;
+    }
+    .cl-circle {
+        left: 165px;
+    }
+    
+}
